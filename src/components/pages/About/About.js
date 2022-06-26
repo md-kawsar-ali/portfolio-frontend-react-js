@@ -1,10 +1,11 @@
 import React from 'react';
+import SubHeader from './../../shared/SubHeader';
 
 const About = () => {
     return (
-        <div>
-            <h1>About Page</h1>
-        </div>
+        <section>
+            <SubHeader title="About Me" />
+        </section>
     );
 };
 

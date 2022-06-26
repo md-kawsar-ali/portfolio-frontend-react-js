@@ -1,4 +1,6 @@
-.menu a:hover {
+.menu a:hover,
+.menu a:active,
+.menu a:focus {
     color: #7562e0;
     background: transparent;
 }

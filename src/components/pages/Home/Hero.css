@@ -12,7 +12,7 @@
     height: 160px;
     width: 160px;
     border-radius: 50%;
-    background: #fafbfd;
+    background: #f6f9fe;
     transform: translateX(-50%);
     z-index: -1;
 }
@@ -39,4 +39,103 @@
 .hero h1 {
     font-size: 3.4rem;
     line-height: 1;
+}
+
+.social-vertical {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    float: right;
+    transform: translateY(100%);
+}
+
+.social-vertical a {
+    color: #ffffff;
+    transition: all 0.3s;
+    opacity: 0.8;
+}
+
+.social-vertical a:hover {
+    transition: all 0.3s;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero h1 {
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .display-pic {
+        max-width: 300px;
+        margin-left: 20px;
+    }
+
+    .hero::before {
+        top: 90px;
+        height: 120px;
+        width: 120px;
+    }
+
+    .hero::after {
+        height: 700px;
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1023.98px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero::after {
+        height: 300px;
+        width: 300px;
+        background: #f6f9fe;
+    }
+
+    .display-pic {
+        display: none;
+    }
+
+    .social-vertical {
+        flex-direction: row;
+        transform: translateY(0);
+        column-gap: 15px;
+        margin-bottom: 10px;
+    }
+
+    .social-vertical a {
+        color: #7562e0;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .hero h1 {
+        font-size: 2.6rem;
+        line-height: 1;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .hero h1 {
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+
+    .hero p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .btn.btn-primary {
+        font-size: 14px;
+        min-height: 2.5rem;
+        max-height: 2.5rem;
+        padding: 0 15px;
+    }
 }
