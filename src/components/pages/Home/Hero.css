@@ -1,0 +1,42 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.hero::before {
+    position: absolute;
+    content: '';
+    top: 100px;
+    left: 0px;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background: #fafbfd;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.hero::after {
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    right: 0px;
+    height: 900px;
+    width: 900px;
+    border-radius: 50%;
+    background: #7562e0;
+    transform: translate(40%, 50%);
+    z-index: -1;
+}
+
+.display-pic {
+    position: absolute;
+    bottom: 0;
+    margin-left: 50px;
+}
+
+.hero h1 {
+    font-size: 3.4rem;
+    line-height: 1;
+}
