@@ -3,50 +3,81 @@ import Container from '../../shared/Container';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Scrollbar } from 'swiper';
 import 'swiper/css';
-import javaScriptLogo from '../../../images/technology/JavaScript.png';
 import LogoSlide from './LogoSlide';
+import htmlLogo from '../../../images/technology/html.png';
+import cssLogo from '../../../images/technology/CSS3.png';
+import javaScriptLogo from '../../../images/technology/javascript.png';
+import reactLogo from '../../../images/technology/reactjs.png';
+import nodeJsLogo from '../../../images/technology/nodejs.png';
+import expressLogo from '../../../images/technology/expressjs.png';
+import mongoDBLogo from '../../../images/technology/MongoDB.png';
+import bootstrapLogo from '../../../images/technology/bootstrap.png';
+import tailwindLogo from '../../../images/technology/tailwind.png';
+import firebaseLogo from '../../../images/technology/firebase.png';
+import githubLogo from '../../../images/technology/github.png';
+import vscodeLogo from '../../../images/technology/vscode.png';
 
 const Features = () => {
     const logos = [
         {
             id: 0,
-            url: javaScriptLogo,
-            alt: 'JavaScript1'
+            url: htmlLogo,
+            alt: 'HTML5'
         },
         {
             id: 1,
-            url: javaScriptLogo,
-            alt: 'JavaScript2'
+            url: cssLogo,
+            alt: 'CSS3'
         },
         {
             id: 2,
             url: javaScriptLogo,
-            alt: 'JavaScript3'
+            alt: 'JavaScript'
         },
         {
             id: 3,
-            url: javaScriptLogo,
-            alt: 'JavaScript4'
+            url: bootstrapLogo,
+            alt: 'Twitter Bootstrap'
         },
         {
             id: 4,
-            url: javaScriptLogo,
-            alt: 'JavaScript1'
+            url: tailwindLogo,
+            alt: 'TailwindCSS'
         },
         {
             id: 5,
-            url: javaScriptLogo,
-            alt: 'JavaScript2'
+            url: reactLogo,
+            alt: 'React JS'
         },
         {
             id: 6,
-            url: javaScriptLogo,
-            alt: 'JavaScript3'
+            url: nodeJsLogo,
+            alt: 'Node JS'
         },
         {
             id: 7,
-            url: javaScriptLogo,
-            alt: 'JavaScript4'
+            url: expressLogo,
+            alt: 'Express JS'
+        },
+        {
+            id: 8,
+            url: mongoDBLogo,
+            alt: 'MongoDB'
+        },
+        {
+            id: 9,
+            url: firebaseLogo,
+            alt: 'Firebase'
+        },
+        {
+            id: 10,
+            url: githubLogo,
+            alt: 'GitHub'
+        },
+        {
+            id: 11,
+            url: vscodeLogo,
+            alt: 'Visual Studio Code'
         }
     ]
 
