@@ -14,7 +14,7 @@ const Header = () => {
     return (
         <header className="bg-base-100 py-2 md:py-3 lg:py-3 fixed w-full z-50">
             <Container>
-                <div className="navbar justify-between">
+                <div className="navbar justify-between px-0">
                     <div className="navbar-start">
                         <Link to='/' className="text-primary uppercase text-xl font-bold">Kawsar A.</Link>
                     </div>

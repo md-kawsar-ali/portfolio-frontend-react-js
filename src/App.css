@@ -4,3 +4,7 @@
     color: #7562e0;
     background: transparent;
 }
+
+.swiper-wrapper {
+    transition-timing-function: linear;
+}

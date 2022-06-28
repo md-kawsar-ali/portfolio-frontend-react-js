@@ -8,7 +8,7 @@ const Hero = () => {
     return (
         <section className="hero min-h-screen bg-base-100 pt-10 md:pt-12 lg:pt-20">
             <Container>
-                <div className="hero-content py-0 max-w-full flex-col lg:flex-row-reverse">
+                <div className="hero-content p-0 max-w-full flex-col lg:flex-row-reverse">
                     <div className="lg:w-6/12">
                         <img src={DP} alt='DP' className="display-pic" />
 
