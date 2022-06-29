@@ -8,3 +8,8 @@
 .swiper-wrapper {
     transition-timing-function: linear;
 }
+
+.service-card {
+    box-shadow: 0px 8px 30px rgb(234, 242, 255);
+    border-radius: 10px;
+}
