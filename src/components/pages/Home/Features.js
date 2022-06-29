@@ -3,6 +3,7 @@ import Container from '../../shared/Container';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Scrollbar } from 'swiper';
 import 'swiper/css';
+import { motion, useViewportScroll, useTransform } from "framer-motion";
 import LogoSlide from './LogoSlide';
 import htmlLogo from '../../../images/technology/html.png';
 import cssLogo from '../../../images/technology/CSS3.png';
@@ -18,6 +19,9 @@ import githubLogo from '../../../images/technology/github.png';
 import vscodeLogo from '../../../images/technology/vscode.png';
 
 const Features = () => {
+    const { scrollYProgress } = useViewportScroll();
+    const scale = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
+
     const logos = [
         {
             id: 0,
@@ -86,9 +90,14 @@ const Features = () => {
             <Container>
                 <div className="flex flex-col md:flex-row  gap-5 md:gap-8">
                     <div className="w-full md:w-3/12">
-                        <h2 className='text-4xl md:text-6xl lg:text-7xl text-primary font-bold'>4+</h2>
-                        <h3 className='text-lg md:text-2xl lg:text-2xl text-slate-700 font-semibold lg:mb-1'>Years of</h3>
-                        <h3 className='text-lg md:text-2xl lg:text-2xl text-slate-700 font-semibold'>Exprerience</h3>
+                        <motion.div
+                            style={{
+                                scale
+                            }}>
+                            <h2 className='text-4xl md:text-6xl lg:text-7xl text-primary font-bold'>4+</h2>
+                            <h3 className='text-lg md:text-2xl lg:text-2xl text-slate-700 font-semibold lg:mb-1'>Years of</h3>
+                            <h3 className='text-lg md:text-2xl lg:text-2xl text-slate-700 font-semibold'>Exprerience</h3>
+                        </motion.div>
                     </div>
 
                     <div className="w-full md:w-9/12">
