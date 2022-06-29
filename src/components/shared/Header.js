@@ -1,12 +1,23 @@
 import React from 'react';
 import Container from './Container';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
+    const scrollWithOffset = (el) => {
+        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+        const yOffset = -80;
+        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+    }
+
     const menu = <>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to='/about'>About</Link></li>
-        <li><Link to='/skills'>Skills</Link></li>
+        <li><HashLink smooth to="/#">Home</HashLink></li>
+        <li>
+            <HashLink smooth to="/#about" scroll={el => scrollWithOffset(el)}>About</HashLink>
+        </li>
+        <li>
+            <HashLink smooth to="/#services" scroll={el => scrollWithOffset(el)}>Services</HashLink>
+        </li>
         <li><Link to='/portfolio'>Portfolio</Link></li>
         <li><Link to='/contact'>Contact</Link></li>
     </>;

@@ -82,7 +82,7 @@ const Features = () => {
     ]
 
     return (
-        <section className='bg-slate-100 pt-16 pb-16 md:pt-20 md:pb-20 relative text-center md:text-left'>
+        <section id='about' className='bg-slate-100 pt-16 pb-16 md:pt-20 md:pb-20 relative text-center md:text-left'>
             <Container>
                 <div className="flex flex-col md:flex-row  gap-5 md:gap-8">
                     <div className="w-full md:w-3/12">
