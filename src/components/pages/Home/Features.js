@@ -79,7 +79,7 @@ const Features = () => {
             url: vscodeLogo,
             alt: 'Visual Studio Code'
         }
-    ]
+    ];
 
     return (
         <section id='about' className='bg-slate-100 pt-16 pb-16 md:pt-20 md:pb-20 relative text-center md:text-left'>
@@ -87,8 +87,8 @@ const Features = () => {
                 <div className="flex flex-col md:flex-row  gap-5 md:gap-8">
                     <div className="w-full md:w-3/12">
                         <h2 className='text-4xl md:text-6xl lg:text-7xl text-primary font-bold'>4+</h2>
-                        <h3 className='text-lg md:text-2xl lg:text-3xl text-slate-700 font-semibold lg:mb-1'>Years of</h3>
-                        <h3 className='text-lg md:text-2xl lg:text-3xl text-slate-700 font-semibold'>Exprerience</h3>
+                        <h3 className='text-lg md:text-2xl lg:text-2xl text-slate-700 font-semibold lg:mb-1'>Years of</h3>
+                        <h3 className='text-lg md:text-2xl lg:text-2xl text-slate-700 font-semibold'>Exprerience</h3>
                     </div>
 
                     <div className="w-full md:w-9/12">
