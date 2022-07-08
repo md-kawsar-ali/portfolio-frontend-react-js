@@ -13,3 +13,7 @@
     box-shadow: 0px 8px 30px rgb(234, 242, 255);
     border-radius: 10px;
 }
+
+.text-sm {
+    letter-spacing: 0.5px;
+}

@@ -18,8 +18,10 @@ const Header = () => {
         <li>
             <HashLink smooth to="/#services" scroll={el => scrollWithOffset(el)}>Services</HashLink>
         </li>
-        <li><Link to='/portfolio'>Portfolio</Link></li>
-        <li><Link to='/contact'>Contact</Link></li>
+        <li>
+            <HashLink smooth to="/#portfolio" scroll={el => scrollWithOffset(el)}>Portfolio</HashLink>
+        </li>
+        <li><Link to='/'>Contact</Link></li>
     </>;
 
     return (

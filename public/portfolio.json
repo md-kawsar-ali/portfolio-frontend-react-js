@@ -1,0 +1,55 @@
+[
+    {
+        "id": 1,
+        "img": "./img/1.jpg",
+        "title": "Autima Pro",
+        "description": "Autima Pro is a manufacturing management MERN Stack application.",
+        "languages": ["HTML", "CSS", "JavaScript", "React JS", "Node JS", "Express JS", "MongoDB", "Firebase", "JWT"],
+        "livePreview": "https://autima-pro.web.app",
+        "client": "https://github.com/md-kawsar-ali/manufacturer-client-reactjs",
+        "server": "https://github.com/md-kawsar-ali/manufacturer-server-nodejs"
+    },
+    {
+        "id": 2,
+        "img": "./img/1.jpg",
+        "title": "Motodeal",
+        "description": "Motodeal is an inventory management MERN Stack application.",
+        "languages": ["HTML", "CSS", "JavaScript", "React JS", "Node JS", "Express JS", "MongoDB"],
+        "livePreview": "https://inventory-management-reactjs.web.app",
+        "client": "https://github.com/md-kawsar-ali/inventory-management-client",
+        "server": "https://github.com/md-kawsar-ali/inventory-management-server"
+    },
+    {
+        "id": 3,
+        "img": "./img/1.jpg",
+        "title": "Gymvast",
+        "description": "Gymvast is a personal gym trainer frontend application.",
+        "languages": ["HTML", "CSS", "JavaScript", "React JS", "Firebase"],
+        "livePreview": "https://gymvast.web.app",
+        "client": "https://github.com/md-kawsar-ali/gymvast-personal-gym-trainer-reactjs"
+    },
+    {
+        "id": 4,
+        "img": "./img/1.jpg",
+        "title": "Manyflights",
+        "description": "Manyflights.io is a cheap flight alert web application made with Html, Css, JavaScript and Bootstrap.",
+        "languages": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+        "livePreview": "https://manyflights.io"
+    },
+    {
+        "id": 5,
+        "img": "./img/1.jpg",
+        "title": "Afiah",
+        "description": "Afiah is a responsive app landing page made with Html, Css, JavaScript and Bootstrap.",
+        "languages": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+        "livePreview": "https://afiah.app"
+    },
+    {
+        "id": 6,
+        "img": "./img/1.jpg",
+        "title": "Hello Doctor",
+        "description": "Hello Doctor is a responsive app landing page made Html, Css, JavaScript and Bootstrap.",
+        "languages": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+        "livePreview": "https://hellodoctor.com.pk"
+    }
+]
