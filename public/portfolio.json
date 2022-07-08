@@ -11,7 +11,7 @@
     },
     {
         "id": 2,
-        "img": "./img/1.jpg",
+        "img": "./img/2.jpg",
         "title": "Motodeal",
         "description": "Motodeal is an inventory management MERN Stack application.",
         "languages": ["HTML", "CSS", "JavaScript", "React JS", "Node JS", "Express JS", "MongoDB"],
@@ -21,7 +21,7 @@
     },
     {
         "id": 3,
-        "img": "./img/1.jpg",
+        "img": "./img/3.jpg",
         "title": "Gymvast",
         "description": "Gymvast is a personal gym trainer frontend application.",
         "languages": ["HTML", "CSS", "JavaScript", "React JS", "Firebase"],
