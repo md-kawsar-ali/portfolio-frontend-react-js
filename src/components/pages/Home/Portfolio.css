@@ -47,12 +47,33 @@
     left: calc(50% - 250px);
     bottom: 35px;
     max-width: 500px;
-    padding: 30px;
+    padding: 30px 0;
     background: #ffffff;
     border-radius: 15px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     z-index: 9999;
+}
+
+.portfolio-sec .custom-scroll {
+    padding: 0 30px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.custom-scroll::-webkit-scrollbar {
+    border-radius: 3px;
+    width: 5px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+    background: #eeeeee;
+    border-radius: 3px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: rgb(135, 83, 255);
 }
 
 .portfolio-sec .project-details img {
@@ -75,4 +96,33 @@
     );
     backdrop-filter: blur(0.5px);
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-sec .project h2 {
+        position: absolute;
+        bottom: 16px;
+        left: 24px;
+        color: #ffffff;
+        font-size: 1.2rem;
+    }
+
+    .portfolio-sec .project-details {
+        top: 80px;
+        left: 30px;
+        right: 30px;
+        bottom: 80px;
+        max-width: 500px;
+        padding: 30px 0;
+        border-radius: 10px;
+    }
+
+    .portfolio-sec .custom-scroll {
+        height: 100%;
+        padding: 0 25px;
+    }
+
+    .portfolio-sec .project-details img {
+        border-radius: 10px;
+    }
 }

@@ -21,7 +21,7 @@ const Header = () => {
         <li>
             <HashLink smooth to="/#portfolio" scroll={el => scrollWithOffset(el)}>Portfolio</HashLink>
         </li>
-        <li><Link to='/'>Contact</Link></li>
+        <li><Link to='/' className='md:pr-0'>Contact</Link></li>
     </>;
 
     return (

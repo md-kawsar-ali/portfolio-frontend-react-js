@@ -4,7 +4,7 @@
         "img": "./img/1.jpg",
         "title": "Autima Pro",
         "description": "Autima Pro is a manufacturing management MERN Stack application.",
-        "languages": ["HTML", "CSS", "JavaScript", "React JS", "Node JS", "Express JS", "MongoDB", "Firebase", "JWT"],
+        "languages": ["HTML", "CSS", "JavaScript", "React JS", "JWT", "Node JS", "Express JS", "MongoDB", "Firebase"],
         "livePreview": "https://autima-pro.web.app",
         "client": "https://github.com/md-kawsar-ali/manufacturer-client-reactjs",
         "server": "https://github.com/md-kawsar-ali/manufacturer-server-nodejs"
@@ -30,7 +30,7 @@
     },
     {
         "id": 4,
-        "img": "./img/1.jpg",
+        "img": "./img/4.jpg",
         "title": "Manyflights",
         "description": "Manyflights.io is a cheap flight alert web application made with Html, Css, JavaScript and Bootstrap.",
         "languages": ["HTML", "CSS", "JavaScript", "Bootstrap"],
@@ -38,7 +38,7 @@
     },
     {
         "id": 5,
-        "img": "./img/1.jpg",
+        "img": "./img/5.jpg",
         "title": "Afiah",
         "description": "Afiah is a responsive app landing page made with Html, Css, JavaScript and Bootstrap.",
         "languages": ["HTML", "CSS", "JavaScript", "Bootstrap"],
@@ -46,7 +46,7 @@
     },
     {
         "id": 6,
-        "img": "./img/1.jpg",
+        "img": "./img/6.jpg",
         "title": "Hello Doctor",
         "description": "Hello Doctor is a responsive app landing page made Html, Css, JavaScript and Bootstrap.",
         "languages": ["HTML", "CSS", "JavaScript", "Bootstrap"],
