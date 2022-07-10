@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Container from './Container';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
+    const [headerScrolling, setHeaderScrolling] = useState(false);
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            window.addEventListener('scroll', () => {
+                setHeaderScrolling(window.pageYOffset > 50)
+            });
+        }
+    }, []);
+
     const scrollWithOffset = (el) => {
         const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
         const yOffset = -80;
@@ -21,11 +31,13 @@ const Header = () => {
         <li>
             <HashLink smooth to="/#portfolio" scroll={el => scrollWithOffset(el)}>Portfolio</HashLink>
         </li>
-        <li><Link to='/' className='md:pr-0'>Contact</Link></li>
+        <li>
+            <HashLink className="md:pr-0" smooth to="/#contact" scroll={el => scrollWithOffset(el)}>Contact</HashLink>
+        </li>
     </>;
 
     return (
-        <header className="bg-base-100 py-2 md:py-3 lg:py-3 fixed w-full z-50">
+        <header className={`bg-base-100 py-2 md:py-3 lg:py-3 fixed w-full z-50 ${headerScrolling ? 'scrolling' : ''}`}>
             <Container>
                 <div className="navbar justify-between px-0">
                     <div className="navbar-start">
@@ -43,7 +55,7 @@ const Header = () => {
                     </div>
 
                     <div className="navbar-center hidden lg:flex">
-                        <ul className="menu menu-horizontal font-medium text-secondary p-0">
+                        <ul className="menu menu-horizontal font-medium text-secondary/75 p-0">
                             {menu}
                         </ul>
                     </div>

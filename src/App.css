@@ -5,6 +5,23 @@
     background: transparent;
 }
 
+header.scrolling {
+    background: transparent;
+}
+
+header.scrolling::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(253, 251, 255, 0.9);
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 0px 30px rgba(128, 0, 255, 0.075);
+    z-index: -1;
+}
+
 .swiper-wrapper {
     transition-timing-function: linear;
 }
