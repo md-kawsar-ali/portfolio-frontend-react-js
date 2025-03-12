@@ -1,10 +1,17 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 import Container from "./../../shared/Container";
 import "./Hero.css";
 import DP from "../../../images/dp.png";
 import { GitHub, Instagram, Linkedin, Twitter } from "react-feather";
 
 const Hero = () => {
+	const scrollWithOffset = (el) => {
+		const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+		const yOffset = -80;
+		window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+	};
+
 	return (
 		<section className="hero min-h-screen bg-base-100 pt-10 md:pt-12 lg:pt-20">
 			<Container>
@@ -39,9 +46,10 @@ const Hero = () => {
 					<div className="w-full md:w-10/12 lg:w-6/12">
 						<h1 className="font-bold uppercase text-secondary">Md Kawsar Ali</h1>
 						<p className="py-4 md:py-6 lg:py-6 leading-7">Hi there! This is Md Kawsar Ali, Professional Frontend Web Developer! Working with Html5, CSS3, JavaScript, React JS, Node JS, Express JS, MongoDB, Bootstrap, Tailwind CSS & WordPress!</p>
-						<a href="#portfolio" className="btn btn-primary font-medium text-white rounded-full px-7">
+
+						<HashLink smooth to="/#portfolio" scroll={(el) => scrollWithOffset(el)} className="btn btn-primary font-medium text-white rounded-full px-7">
 							My Portfolio
-						</a>
+						</HashLink>
 					</div>
 				</div>
 			</Container>
